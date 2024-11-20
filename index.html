@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 50px;
+        background-color: #f4f4f4;
+      }
+      #main {
+        max-width: 600px;
+        background: #fff;
+        padding: 50px;
+      }
+      #main h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .group {
+        margin-bottom: 15px;
+      }
+      .group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+      }
+      .group input,
+      .group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .error {
+        color: red;
+        font-size: 0.9em;
+        margin-top: 5px;
+      }
+      .btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #result {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.1em;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h2>Form Registration</h2>
+      <form id="userForm">
+        <div class="group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" />
+          <span class="error"></span>
+        </div>
+        <div class="group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" />
+          <span class="error"></span>
+        </div>
+        <div class="group">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter your password" />
+          <span class="error"></span>
+        </div>
+        <div class="group">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <span class="error"></span>
+        </div>
+        <div class="group">
+          <label for="city">City</label>
+          <select id="city">
+            <option value="">Select City</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Lahore">Lahore</option>
+          </select>
+          <span class="error"></span>
+        </div>
+        <button type="submit" class="btn">Submit Form</button>
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
